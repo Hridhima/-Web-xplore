@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content=" width = device-width, initial scale = 1" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Styles1.css" />
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="final.html"><img src="eduford_img/hub.png" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"  onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <h1>Udaan</h1>
+    </section>
+    <section class="about">
+        <div class="main">
+            <img src="eduford_img/about.jpg" id="new" />
+            <div class="about-text">
+                <h1>Engineers Hub</h1>
+                <p>
+                    EngineerHUB is INDIA's leading community of engineers where students or alumni from IITs, NITs, IIITs and state colleges unite together to develop and nurture the skills of students all over India.Our goal is to counsel beginners in the field by providing them with basic guidelines about how and where to start their learning.We provide a procedure of gaining skills and knowledge through electronic devices like computers, mobiles, laptops, etc using the internet. Online education makes it possible for tutors or mentors to reach all the students more flexibly and teach them the relevant skills more efficiently.
+                </p>
+                <button type="button" onclick="myfun()">EXPLORE!!</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Our Platform is the leading Platform across India with more than 45,000 students studying across more than 20 States.<br />With high academic standards, follow rigorous practices to maintain quality and are well-supported to be able to offer excellent education to its students.
+        </p>
+        <div class="icons">
+            <i class="fa fa-camera" aria-hidden="true"></i>
+
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/adcaccb8ed.js" crossorigin="anonymous"></script>
+    <script>
+        function myfun() {
+            text = alert("Display Message!!")
+        }
+
+
+    </script>
+    <script>
+
+        let navLinks = document.getElementById("navLinks");
+        function ShowMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
